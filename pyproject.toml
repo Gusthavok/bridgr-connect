@@ -1,0 +1,31 @@
+[project]
+name = "bridgr-connect"
+version = "0.1.0"
+description = "Client SDK for the Bridgr / Jobelix agent orchestrator (SSE streaming over OpenAI-style /v1/chat/completions)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Augustin Kheng" }]
+keywords = ["agent", "llm", "orchestrator", "sse", "streaming", "openai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "httpx>=0.27",
+]
+
+[project.scripts]
+bridgr = "bridgr_connect.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
