@@ -1,5 +1,9 @@
 # bridgr-connect
 
+[![PyPI version](https://img.shields.io/pypi/v/bridgr-connect.svg)](https://pypi.org/project/bridgr-connect/)
+[![Python versions](https://img.shields.io/pypi/pyversions/bridgr-connect.svg)](https://pypi.org/project/bridgr-connect/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Automatically route agentic tasks from your code to the best available agent on the market — without hard-coding any of them.**
 
 `bridgr-connect` is the Python SDK for **Jobelix**, an agent orchestrator that
@@ -64,10 +68,14 @@ Speaks the Jobelix Vercel-style API: `GET /api/agents`, `POST /api/route`,
 ## Install
 
 ```bash
-pip install bridgr-connect          # once published
-# or, locally:
+pip install bridgr-connect
+# or
+uv pip install bridgr-connect
+# or — local dev checkout
 pip install -e /path/to/bridgr-connect
 ```
+
+Requires Python ≥ 3.10. The only runtime dependency is `httpx`.
 
 ## Quickstart
 
@@ -235,6 +243,12 @@ blocks (see Event types above).
 
 - Python 3.10+
 - `httpx >= 0.27`
+
+## Links
+
+- **PyPI:** https://pypi.org/project/bridgr-connect/
+- **Source:** https://github.com/Gusthavok/bridgr-connect
+- **Issues:** https://github.com/Gusthavok/bridgr-connect/issues
 
 ## License
 

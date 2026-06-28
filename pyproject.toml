@@ -1,14 +1,15 @@
 [project]
 name = "bridgr-connect"
 version = "0.1.0"
-description = "Client SDK for the Bridgr / Jobelix agent orchestrator (SSE streaming over OpenAI-style /v1/chat/completions)."
+description = "Python SDK for Jobelix — automatically route agentic tasks to the best available agent on the market, with live SSE streaming."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Augustin Kheng" }]
-keywords = ["agent", "llm", "orchestrator", "sse", "streaming", "openai"]
+keywords = ["agent", "llm", "orchestrator", "sse", "streaming", "openai", "jobelix", "bridgr"]
 classifiers = [
     "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -19,6 +20,11 @@ classifiers = [
 dependencies = [
     "httpx>=0.27",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Gusthavok/bridgr-connect"
+Repository = "https://github.com/Gusthavok/bridgr-connect"
+Issues = "https://github.com/Gusthavok/bridgr-connect/issues"
 
 [project.scripts]
 bridgr = "bridgr_connect.__main__:main"
